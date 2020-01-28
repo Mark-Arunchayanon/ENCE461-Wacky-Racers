@@ -62,7 +62,7 @@ marks.
   H-bridge is recommended).
 \item Regulate the nominal battery voltage to 5\,V with a buck
   regulator IC (ADP2302ARDZ-50).
-\item Be decorated with an LED strip (supplied) controlled by the MCU.
+\item Be decorated with an LED tape (supplied) controlled by the MCU.
 \item Use a USB interface for debugging.
 \item Use a serial wire debug interface for MCU programming/debugging.
 \item Have adequate battery fusing.
@@ -108,7 +108,7 @@ team's Wacky Racer.  However, you cannot:
 \item Use an ARM microcontroller (Atmel SAM4S8).
 \item Regulate the nominal 6\,V battery voltage to 5\,V with a buck
   regulator IC (ADP2302ARDZ-50).
-\item Be decorated with an LED strip (supplied) controlled by the MCU.
+\item Be decorated with an LED tape (supplied) controlled by the MCU.
 \item Use an I2C IMU (MPU-9250) for head motion detection.
 \item Use a USB interface for debugging.
 \item Use a serial wire debug interface for MCU programming/debugging.
@@ -139,32 +139,29 @@ Systems Lab (ESL):
 %
 \begin{flushleft}
   \begin{tabular}{ c l l }
-    Week            &       Task \\
+    Week            &       Assistance  &  Assessment \\
     \hline \hline
-    
-    1 & Altium tutorial 1 (schematics)  \\
-    2 & Milestone: schematic submission for review  \\
-    3 & Schematic review     \\
-    4 & Altium tutorial 3 (PCB)         \\
-    5 & Early PCB review \& submission                  \\
-    6 & PCB review \& submission                  \\
-    7 & Late PCB review \& submission                  \\
-    \\
-    8--10 (break) & PCB population, chassis/hat construction \\
-    \\
-    11 & Lab work \\
-    12 & Milestone: IMU/motors          \\
-    13 & Milestone: radio control       \\
-    14 & Milestone: functionality       \\
-    15 & Competition                    \\
+    1 & Altium tutorial 1 (schematics)  & \\
+    2 & Altium tutorial 2 (components) & Schematic submission for review  \\
+    3 & Schematic review  &                \\
+    4 & Altium tutorial 3 (PCB) &          \\
+    5 & PCB layout  & Early PCB submission \\
+    6 & PCB layout  & PCB submission     \\
+    10 & General    & Blinky            \\    
+    11 & General    & IMU/motors        \\
+    12 & General    & Radio control     \\
+    13 & General    & LED tape          \\    
+    14 & General    & Functionality     \\
+    15 &            & Competition       \\
   \end{tabular}
 \end{flushleft}
 
-The blinky test falls in the mid-semester break but is one of the major steps to
-finishing this assignment. It requires having a functional PCB with a
-microcontroller that turns on properly, a functional toolchain and the ability
-to download code into the microcontrollers flash memory. \emph{Do not
-underestimate how tricky this can be}.
+The blinky test falls in the mid-semester break but is one of the
+major steps to finishing this assignment. It requires having a
+functional PCB with a microcontroller that turns on properly, a
+functional toolchain and the ability to download code into the
+microcontrollers flash memory. \emph{Do not underestimate how tricky
+  this can be}.
 
 \section{Assessment}
 
@@ -277,7 +274,7 @@ To be awarded any marks for the race:
 \item Your vehicle must stop for at least 10\,s if the bumper is hit.
 
 \item Your vehicle must be controlled by motions of the Wacky hat
-  sitting on someones head.
+  sitting on someone's head.
 \end{enumerate}
 
 
@@ -289,8 +286,8 @@ PCBs at the end of the assignment.
 
 \subsection{Version control}
 
-Use version control for everything, or else!  Learning git is a skill
-you will not regret.
+Use version control for everything, or else!  Learning git is
+frustrating but is a skill you will not regret.
 
 Your group leader should create a forked copy of the wacky-racers-2020
 git project and then add the other group members to the project.  This
@@ -308,7 +305,12 @@ can be done by:
 
 \item Using a bash terminal (or other useful shell), enter the command:
 
-\begin{lstlisting}[breaklines]
+  \lstset{language=bash}
+  \lstset{basicstyle=\ttfamily\small}
+  \lstset{keywordstyle=\color{black}\ttfamily}
+  \lstset{breaklines}
+  
+\begin{lstlisting}
   $ git clone --recursive https://eng-git.canterbury.ac.nz/your-userid/wacky-racers-2020.git  
 \end{lstlisting}
 
@@ -367,8 +369,8 @@ see Scott Lloyd in the SMT lab.
   \href{http://ecewiki.elec.canterbury.ac.nz/mediawiki/index.php/Schematic_guidelines}{schematic
     guidelines on ecewiki}.
 
-\item Add you and your partner's name to the title block on your
-  schematic.
+\item Add you and your partner's name and your group number to the
+  title block on your schematic.
 
 \item Save PDF files of your schematics in your source repository.
   \textbf{Note, when debugging your PCBs, we will not help you until
@@ -405,11 +407,8 @@ see Scott Lloyd in the SMT lab.
 \subsection{PCBs}
 
 \begin{enumerate}
-\item Your four-layer PCBs are going to be manufactured by
-\href{http://ecewiki.elec.canterbury.ac.nz/mediawiki/index.php/PCB_Zone}{PCB
-  Zone} in Auckland.  They produce a PCB solder mask and plated
-through holes.  We will be putting several groups's boards onto a
-panel to reduce costs.
+\item Your four-layer PCBs are going to be manufactured in batches.
+  There is at least a week turnaround time to get the boards made.
 
 \item It is important that you check footprints for parts thay you
   create.  We will impose a 10\% penalty for each rerun of a PCB, say
@@ -469,8 +468,8 @@ final mark.
 possible. A virtual machine running on Windows is acceptable for this. You will
 need to check instructions on ecewiki for how to install the required toolchain.
 
-\item We do not support embedded systems development on Windows, but is is
-possible.
+\item We do not support embedded systems development on Windows, but
+  it is possible.
 
 \item If you are not using version control for this you are foolish.
 
