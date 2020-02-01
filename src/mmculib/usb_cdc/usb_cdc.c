@@ -352,7 +352,6 @@ usb_cdc_getc (usb_cdc_t usb_cdc)
 }
 
 
-
 int
 usb_cdc_putc (usb_cdc_t usb_cdc, char ch)
 {

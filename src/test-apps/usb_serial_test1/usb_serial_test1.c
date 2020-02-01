@@ -4,6 +4,7 @@
 #include "sys.h"
 #include "pacer.h"
 #include "delay.h"
+#include <fcntl.h>`
 
 
 #define PACER_RATE 1000
@@ -17,13 +18,25 @@ static usb_serial_cfg_t usb_serial_cfg =
 
 
 static void
+prompt_command (void)
+{
+    printf ("> ");
+    fflush (stdout);    
+}
+
+
+static void
 process_command (void)
 {
     char buffer[80];
     char *str;
     
     str = fgets (buffer, sizeof (buffer), stdin);
+    if (! str)
+        return;
 
+    // printf ("<<<%s>>>\n", str);
+    
     switch (str[0])
     {
     case '0':
@@ -35,12 +48,15 @@ process_command (void)
         break;
 
     case 'h':
-        fprintf (stderr, "Hello world!\n");
+        printf ("Hello world!\n");
+        fflush (stdout);
         break;
 
     default:
        break;
     }
+
+    prompt_command ();
 }
 
 
@@ -48,13 +64,30 @@ int main (void)
 {
     usb_cdc_t usb_cdc;
     int flash_ticks = 0;
+    int i;
 
     pio_config_set (LED1_PIO, PIO_OUTPUT_LOW);                
     pio_config_set (LED2_PIO, PIO_OUTPUT_LOW);                
 
-    usb_serial_init (&usb_serial_cfg, "/dev/usb_serial");
-    freopen ("/dev/usb_serial", "a+", stdout);
+    // Create non-blocking tty device for USB CDC connection.
+    usb_serial_init (&usb_serial_cfg, "/dev/usb_tty");
+    
+    freopen ("/dev/usb_tty", "a", stdout);
+    freopen ("/dev/usb_tty", "r", stdin);    
 
+    for (i = 0; i < 100; i++)
+    {
+        printf ("Hello world %d\n", i);
+        fflush (stdout);
+        delay_ms (100);
+    }
+
+    // The Linux ttyACM device driver echoes what is sent until
+    // a program such as gtkterm disables the echo.  So we may receive
+    // much of what we sent...
+
+    prompt_command ();
+    
     pacer_init (PACER_RATE);
 
     while (1)
@@ -66,7 +99,6 @@ int main (void)
 	{
 	    flash_ticks = 0;
 
-	    /* Toggle LED2.  */
 	    pio_output_toggle (LED2_PIO);
 
             process_command ();

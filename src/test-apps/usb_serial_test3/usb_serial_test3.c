@@ -15,13 +15,13 @@ static usb_serial_cfg_t usb_serial_cfg =
     .write_timeout_us = 1,
 };
 
-static usb_serial_t *stream;
+static usb_serial_t *usb_serial;
 
 
 static void
 prompt_command (void)
 {
-    usb_serial_puts (stream, "> ");
+    usb_serial_puts (usb_serial, "> ");
 }
 
 
@@ -31,11 +31,11 @@ process_command (void)
     char buffer[80];
     char *str;
     
-    str = usb_serial_gets (stream, buffer, sizeof (buffer));
+    str = usb_serial_gets (usb_serial, buffer, sizeof (buffer));
     if (! str)
         return;
 
-    // usb_serial (stream, "<<<%s>>>\n", str);
+    // usb_serial (usb_serial, "<<<%s>>>\n", str);
     
     switch (str[0])
     {
@@ -48,7 +48,7 @@ process_command (void)
         break;
 
     case 'h':
-        usb_serial_puts (stream, "Hello world!\n");
+        usb_serial_puts (usb_serial, "Hello world!\n");
         break;
 
     default:
@@ -68,11 +68,12 @@ int main (void)
     pio_config_set (LED1_PIO, PIO_OUTPUT_LOW);                
     pio_config_set (LED2_PIO, PIO_OUTPUT_LOW);                
 
-    stream = usb_serial_init (&usb_serial_cfg, "");
+    // Create non-blocking tty device for USB CDC connection.
+    usb_serial = usb_serial_init (&usb_serial_cfg, "");
 
     for (i = 0; i < 100; i++)
     {
-        usb_serial_puts (stream, "Hello world\n");
+        usb_serial_puts (usb_serial, "Hello world\n");
         delay_ms (100);
     }
 

@@ -70,8 +70,10 @@ int main (void)
     pio_config_set (LED1_PIO, PIO_OUTPUT_LOW);                
     pio_config_set (LED2_PIO, PIO_OUTPUT_LOW);                
 
-    usb_serial_init (&usb_serial_cfg, "/dev/usb_serial");
-    stream = fopen ("/dev/usb_serial", "r+");
+    // Create non-blocking tty device for USB CDC connection.
+    usb_serial_init (&usb_serial_cfg, "/dev/usb_tty");
+
+    stream = fopen ("/dev/usb_tty", "r+");
 
     for (i = 0; i < 100; i++)
     {
