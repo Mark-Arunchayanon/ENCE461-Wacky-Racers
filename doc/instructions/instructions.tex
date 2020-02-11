@@ -165,7 +165,8 @@ Notes:
 \begin{enumerate}
 \item There there may be a 6--10 day delay for the PCBs to be
   manufactured from the time of submission.  You will then need to
-  book an assembly session in the SMT lab.
+  book an assembly session in the SMT lab provided you have done the
+  SMT lab induction.
 
 \item Do not underestimate the blinky milestone.  It requires having a
   functional PCB with a microcontroller that turns on properly, a
@@ -184,7 +185,7 @@ The marks breakdown (max. 0x64) is:
     Blinky milestone  & 0x5 marks\\    
     IMU/motor milestone  & 0x5 marks\\
     Radio control milestone  & 0x5 marks\\
-    Functional assessment & 0--0x4 marks \\
+    Functional assessment & 0--0x14 marks \\
     Board inspection & 0--0x1e marks \\
     Competition & 0--0xa marks \\
     Individual critique & 0--0xf marks \\
@@ -206,7 +207,7 @@ stream.  If you need an exception to this, see Ben Mitchell with a
 \item [PCB submission] Submit your PCB design to Learn for
   manufacture.  To encourage early submission there is a sliding scale
   for marks depending on when the PCB is submitted, see table.  After
-  week 7 there is a 10 mark penalty per week.  \textbf{NB, a rushed
+  week 7, there is a 10 mark penalty per week.  \textbf{NB, a rushed
     PCB design will cause you more grief, more PCB rework, and a lower
     mark for the inspection.}
 
@@ -233,7 +234,7 @@ stream.  If you need an exception to this, see Ben Mitchell with a
   to the Wacky Racer over a radio link.
 \end{description}
 
-\emph{If you cannot show the functionality of a previous milestone
+\textbf{If you cannot show the functionality of a previous milestone
   during any assessment, you will fail that assessment and loose any
   marks from the previous milestone.}
 
@@ -333,7 +334,7 @@ can be done by:
   \lstset{breaklines}
   
 \begin{lstlisting}
-  $ git clone https://eng-git.canterbury.ac.nz/your-userid/wacky-racers-2020.git   wacky-racers
+  $ git clone https://eng-git.canterbury.ac.nz/your-userid/wacky-racers-2020.git wacky-racers
 \end{lstlisting}
 
 If you do not want to have to enter your password for every git
@@ -408,7 +409,7 @@ repository, you can get the updated stuff using:
 
 \item Save PDF files of your schematics in your source repository.
   \textbf{Note, when debugging your PCBs, we will not help you until
-    you show us your printed schematic}.
+    you show us your printed A3 schematic}.
 
 \item We bet that you will not have enough test points to clip an
   oscilloscope probe to.  Do not think you can hold the probe tip
@@ -562,12 +563,12 @@ have missed and let you fix it without asking for help.
   These were a legacy of previous Wacky Racers.  They are also safer
   than lithium batteries with sleep-deprived students.
 
-\item \emph{Why can't I program my device using Windows?} Due to
-  various aspects of the Windows ecosystem, setting up a fully
-  functional build environment is more complicated, will often vary
-  from machine to machine, will often break filepaths, and will often
-  cause bizarre compilation errors. Use at your own risk, we will not
-  assist in debugging issues related to Windows.
+%% \item \emph{Why can't I program my device using Windows?} Due to
+%%   various aspects of the Windows ecosystem, setting up a fully
+%%   functional build environment is more complicated, will often vary
+%%   from machine to machine, will often break filepaths, and will often
+%%   cause bizarre compilation errors. Use at your own risk, we will not
+%%   assist in debugging issues related to Windows.
 
 \end{itemize}
 
