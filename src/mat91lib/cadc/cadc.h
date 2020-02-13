@@ -17,7 +17,6 @@ extern "C" {
 #include "sys.h"
 #include "adc.h"
 #include "tc.h"
-#include "capture.h"    
     
 
 typedef struct
@@ -32,24 +31,21 @@ typedef struct
 
 typedef struct cadc_dev *cadc_t;    
 
-
+typedef void (*cadc_callback_t) (void *handle, adc_sample_t *buffer,
+                                 adc_sample_t *prev_buffer, uint16_t size);
+    
 cadc_t cadc_init (const cadc_cfg_t *cfg);
 
-void cadc_start (void);
+void cadc_start (cadc_t dev);
 
-void cadc_stop (void);
+void cadc_stop (cadc_t dev);
 
-void cadc_shutdown (void);
+uint8_t cadc_num_channels_get (cadc_t dev);
+    
+void cadc_callback_register (cadc_t dev, cadc_callback_t callback_func,
+                             void *callback_data);
 
-bool cadc_captured_p (void);
-
-bool cadc_capture_start (adc_sample_t *buffer, adc_sample_t pretrigger,
-                         adc_sample_t samples,
-                         adc_sample_t high_threshold,
-                         adc_sample_t low_threshold,
-                         capture_callback_t callback);
-
-void cadc_capture_stop (void);
+void cadc_shutdown (cadc_t dev);
 
     
 #ifdef __cplusplus

@@ -1,10 +1,16 @@
+/** @file   cadc.c
+    @author M. P. Hayes
+    @date   12 February 2020
+    @brief  Continuuous analogue to digital converter using DMA
+*/
+
+
 #include <stdlib.h>
 #include <string.h>
 #include "cadc.h"
 #include "adc.h"
 #include "pdc.h"
 #include "irq.h"
-#include "capture.h"
 #include "delay.h"
 
 
@@ -23,11 +29,12 @@ struct cadc_dev
     uint32_t count;
     uint8_t num_channels;
     volatile uint32_t isr_count;
-    capture_t *cap;
     uint8_t num_buffers;
     bool started;
     pdc_descriptor_t *descriptors;
-    volatile adc_sample_t **buffers;    
+    volatile adc_sample_t **buffers;
+    void *callback_data;
+    cadc_callback_t callback_func;
 };
 
 
@@ -51,7 +58,9 @@ cadc_isr (void)
 
     dev->isr_count++;
 
-    capture_update (dev->cap, descr->buffer, dev->prev, dev->dma_size);
+    if (dev->callback_func)
+        dev->callback_func (dev->callback_data, descr->buffer,
+                            dev->prev, dev->dma_size);
     
     dev->prev = descr->buffer;
 }
@@ -64,10 +73,8 @@ cadc_t cadc_init (const cadc_cfg_t *cfg)
     uint8_t num_channels;
     cadc_t dev = &cadc_dev;
 
-    dev->cap = capture_init ();
-    if (! dev->cap)
-        return 0;
-
+    dev->callback_func = 0;
+    
     dev->dma_size = cfg->dma_size;
     dev->num_buffers = cfg->num_buffers;
     if (dev->num_buffers < 3)
@@ -119,14 +126,12 @@ cadc_t cadc_init (const cadc_cfg_t *cfg)
 
 
 void
-cadc_start (void)
+cadc_start (cadc_t dev)
 {
-    cadc_t dev = &cadc_dev;
-    
     if (dev->started)
         return;
     
-    pdc_config (cadc_dev.pdc, 0, dev->descriptors);
+    pdc_config (dev->pdc, 0, dev->descriptors);
 
     // There is a problem with restarting.   It sees like the ADC
     // needs a hardware reset to reset the multiplexer sequencer
@@ -135,68 +140,42 @@ cadc_start (void)
     
     adc_enable (dev->adc);
     pdc_start (dev->pdc);
-    cadc_dev.count = 0;
-    cadc_dev.prev = 0;
-    dev->started = 1;    
+    dev->count = 0;
+    dev->prev = 0;
+    dev->started = 1;
+    dev->prev = 0;    
 }
 
 
 void
-cadc_stop (void)
+cadc_stop (cadc_t dev)
 {
     // adc_disable does nothing; the ADC runs on...
-    adc_disable (cadc_dev.adc);
+    adc_disable (dev->adc);
     // ... but the DMA is stopped
-    pdc_stop (cadc_dev.pdc);
+    pdc_stop (dev->pdc);
 }
 
 
 void
-cadc_shutdown (void)
+cadc_shutdown (cadc_t dev)
 {
-    cadc_stop ();
-    adc_shutdown (cadc_dev.adc);
-    tc_shutdown (cadc_dev.tc);
+    cadc_stop (dev);
+    adc_shutdown (dev->adc);
+    tc_shutdown (dev->tc);
 }
 
 
-bool
-cadc_captured_p (void)
+void cadc_callback_register (cadc_t dev,
+                             cadc_callback_t callback_func,
+                             void *callback_data)
 {
-    return capture_ready_p (cadc_dev.cap);
+    dev->callback_func = callback_func;
+    dev->callback_data = callback_data;    
 }
 
 
-bool
-cadc_capture_start (adc_sample_t *buffer, uint16_t pretrigger,
-                    uint16_t samples,
-                    adc_sample_t high_threshold,
-                    adc_sample_t low_threshold,
-                    capture_callback_t callback)
+uint8_t cadc_num_channels_get (cadc_t dev)
 {
-    cadc_t dev = &cadc_dev;    
-
-    if (pretrigger > dev->dma_size)
-        pretrigger = dev->dma_size;
-    if (pretrigger > samples)
-        pretrigger = samples;
-    
-    capture_start (dev->cap, buffer, pretrigger,
-                   samples, dev->num_channels,
-                   high_threshold,
-                   low_threshold, callback);
-
-    dev->prev = 0;
-    cadc_start ();
-    
-    return 1;
-}
-
-
-void
-cadc_capture_stop (void)
-{
-    cadc_t dev = &cadc_dev;
-    
-    capture_stop (dev->cap);
+    return dev->num_channels;
 }
