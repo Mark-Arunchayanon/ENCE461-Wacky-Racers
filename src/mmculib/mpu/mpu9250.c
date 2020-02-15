@@ -150,6 +150,10 @@
 #define MPU9250_IMU_ZA_OFFSET_H      0x7D
 #define MPU9250_IMU_ZA_OFFSET_L      0x7E
 
+// We only support a single MPU, so we will use a single
+// static allocation to store it.
+static mpu_t _static_mpu = {};
+
 static uint8_t mpu9250_imu_read(mpu_t *mpu, const uint8_t addr)
 {
     uint8_t response = 0;
@@ -283,10 +287,9 @@ static bool mpu9250_init_mag(mpu_t *mpu)
     return true;
 }
 
-
 mpu_t *mpu9250_create(twi_t twi, twi_slave_addr_t imu_addr)
 {
-    mpu_t *mpu = NULL; // TODO: STATIC ALLOCATION?
+    mpu_t *mpu = &_static_mpu;
     mpu->imu_addr = imu_addr;
     mpu->twi = twi;
 
