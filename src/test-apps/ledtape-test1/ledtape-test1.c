@@ -13,7 +13,7 @@
 enum {LOOP_POLL_RATE = 200};
 
 
-#define NUM_LEDS 100
+#define NUM_LEDS 20
 
 int
 main (void)
@@ -23,12 +23,13 @@ main (void)
 
     for (i = 0; i < NUM_LEDS; i++)
     {
-        // Set full green
+        // Set full green  GRB order
         leds[i * 3] = 255;
         leds[i * 3 + 1] = 0;
-        leds[i * 3 + 2] = 0;        
+        leds[i * 3 + 2] = 0;
     }
-        
+
+    pio_config_set (PA17_PIO, PIO_OUTPUT_HIGH);
     
     ledtape_init ();
 
