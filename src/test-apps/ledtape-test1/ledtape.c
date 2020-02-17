@@ -12,7 +12,8 @@ void ledtape_init (void)
 }
 
 
-__attribute__((optimize (O3)))    
+__attribute__((optimize (2)))
+__always_inline__
 static void ledtape_write_byte (uint8_t byte)
 {
     int j;
@@ -32,6 +33,7 @@ static void ledtape_write_byte (uint8_t byte)
 }
 
 
+__attribute__((optimize (2)))
 void ledtape_write (uint8_t *buffer, uint16_t size)
 {
     int i;

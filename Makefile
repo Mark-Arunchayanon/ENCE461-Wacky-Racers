@@ -1,3 +1,5 @@
+# Note, the submodules are no longer used since they caused too much grief!
+
 upstream := $(shell git remote | grep upstream)
 
 update:
