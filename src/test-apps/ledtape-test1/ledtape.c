@@ -38,17 +38,14 @@ void ledtape_write (uint8_t *buffer, uint16_t size)
 {
     int i;
 
-    // Send start...
-
-    // The data order is R G B with a reset code at end
-
+    // The data order is R G B per LED
     for (i = 0; i < size; i++)
     {
         ledtape_write_byte (buffer[i]);
     }
 
-    pio_output_low (LEDTAPE_PIO);
-    // Need 50 us.
-    DELAY_US (80);
-    pio_output_high (LEDTAPE_PIO);            
+    // Send reset code
+    pio_output_high (LEDTAPE_PIO);                
+    DELAY_US (50);
+    pio_output_low (LEDTAPE_PIO);            
 }

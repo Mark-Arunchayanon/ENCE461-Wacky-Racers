@@ -8,12 +8,10 @@
 #include "pacer.h"
 #include "ledtape.h"
 
-/* Define how fast ticks occur.  This must be faster than
-   TICK_RATE_MIN.  */
-enum {LOOP_POLL_RATE = 200};
-
-
 #define NUM_LEDS 20
+
+
+#define LEVEL_SHIFTER_PIO PA17_PIO
 
 int
 main (void)
@@ -29,7 +27,8 @@ main (void)
         leds[i * 3 + 2] = 0;
     }
 
-    pio_config_set (PA17_PIO, PIO_OUTPUT_HIGH);
+    // Enable level-shifter
+    pio_config_set (LEVEL_SHIFTER_PIO, PIO_OUTPUT_HIGH);
     
     ledtape_init ();
 
