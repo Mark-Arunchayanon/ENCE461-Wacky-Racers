@@ -15,8 +15,7 @@ extern "C" {
 #include <stdint.h>
 
 #ifndef __cplusplus
-enum {false = 0, true = 1};
-typedef uint8_t bool;
+#include <stdbool.h>
 #endif
 
 
