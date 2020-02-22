@@ -22,7 +22,6 @@ typedef struct {
 	twi_slave_addr_t imu_addr; /* Address of the MPU9250 - one of 0x68 or 0x69 */
 } mpu_t;
 
-
 /**
  * Initialise the MPU object, attached on a TWI/I2C bus
  *

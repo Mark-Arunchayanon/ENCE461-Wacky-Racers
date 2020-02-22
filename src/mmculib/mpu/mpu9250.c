@@ -23,7 +23,8 @@
 #define MPU9250_MAG_HZL       0x07
 #define MPU9250_MAG_HZH       0x08
 #define MPU9250_MAG_ST2       0x09
-#define MPU9250_MAG_CNTL      0x0A
+#define MPU9250_MAG_CNTL1     0x0A
+#define MPU9250_MAG_CNTL2     0x0B
 #define MPU9250_MAG_ASTC      0x0C
 #define MPU9250_MAG_I2CDIS    0x0F
 #define MPU9250_MAG_ASAX      0x10
@@ -160,6 +161,8 @@ static uint8_t mpu9250_imu_read(mpu_t *mpu, const uint8_t addr)
     twi_ret_t status;
 
     status = twi_master_addr_read(mpu->twi, mpu->imu_addr, addr, 1, &response, 1);
+    if (status != 1)
+        return 0x0;
 
     return response;
 }
@@ -168,7 +171,7 @@ static bool mpu9250_imu_write(mpu_t *mpu, const uint8_t addr,
                                  const uint8_t value)
 {
     twi_ret_t status = twi_master_addr_write(mpu->twi, mpu->imu_addr, addr, 1, &value, 1);
-    return (status == TWI_OK);
+    return (status == 1);
 }
 
 static uint8_t mpu9250_mag_read(mpu_t *mpu, const uint8_t addr)
@@ -177,14 +180,19 @@ static uint8_t mpu9250_mag_read(mpu_t *mpu, const uint8_t addr)
     twi_ret_t status;
 
     status = twi_master_addr_read(mpu->twi, MPU9250_MAG_SLAVE_ADDR, addr, 1, &response, 1);
+    if (status != 1)
+        return 0x0;
 
     return response;
 }
 
-static uint8_t mpu9250_mag_write(mpu_t *mpu, const uint8_t addr,
-                                 const uint8_t value)
+static bool mpu9250_mag_write(mpu_t *mpu, const uint8_t addr, const uint8_t value)
 {
-    return twi_master_addr_write(mpu->twi, MPU9250_MAG_SLAVE_ADDR, addr, 1, &value, 1);
+    uint8_t response = 0;
+    twi_ret_t status;
+
+    status = twi_master_addr_write(mpu->twi, MPU9250_MAG_SLAVE_ADDR, addr, 1, &value, 1);
+    return status == 1;
 }
 
 bool mpu9250_is_imu_ready(mpu_t *mpu)
@@ -198,7 +206,7 @@ static bool mpu9250_read_imu_data(mpu_t *mpu, const uint8_t addr, int16_t data[3
     twi_ret_t status;
 
     status = twi_master_addr_read(mpu->twi, mpu->imu_addr, addr, 1, rawdata, 6);
-    if (status != TWI_OK) {
+    if (status != 6) {
         data[0] = data[1] = data[2] = 0;
         return false;
     }
@@ -216,23 +224,23 @@ bool mpu9250_read_accel(mpu_t *mpu, int16_t acceldata[3])
 }
 
 
-bool mput9250_read_gyro(mpu_t *mpu, int16_t gyrodata[3])
+bool mpu9250_read_gyro(mpu_t *mpu, int16_t gyrodata[3])
 {
     return mpu9250_read_imu_data(mpu, MPU9250_IMU_GYRO_XOUT_H, gyrodata);
 }
 
 bool mpu9250_is_mag_ready(mpu_t *mpu)
 {
-    return (mpu9250_mag_read(mpu, MPU9250_MAG_ST1) & 0x01) != 0;
+    return (mpu9250_mag_read(mpu, MPU9250_MAG_ST1) & 0x1) != 0;
 }
 
 bool mpu9250_read_mag(mpu_t *mpu, int16_t magdata[3])
 {
-    uint8_t rawdata[6];
+    uint8_t rawdata[7];
     twi_ret_t status;
 
-    status = twi_master_addr_read(mpu->twi, MPU9250_MAG_SLAVE_ADDR, MPU9250_MAG_HXL, 1, rawdata, 6);
-    if (status != TWI_OK) {
+    status = twi_master_addr_read(mpu->twi, MPU9250_MAG_SLAVE_ADDR, MPU9250_MAG_HXL, 1, rawdata, 7);
+    if (status != 7 || (rawdata[6] & (1 << 3))) {
         magdata[0] = magdata[1] = magdata[2] = 0;
         return false;
     }
@@ -241,7 +249,7 @@ bool mpu9250_read_mag(mpu_t *mpu, int16_t magdata[3])
     magdata[0] = ((int16_t)rawdata[1] << 8) | rawdata[0];
     magdata[1] = ((int16_t)rawdata[3] << 8) | rawdata[2];  
     magdata[2] = ((int16_t)rawdata[5] << 8) | rawdata[4]; 
-    
+
     return true;
 }
 
@@ -249,9 +257,8 @@ static bool mpu9250_init_imu(mpu_t *mpu)
 {
     uint8_t response;
 
-    /* This should read 0x71.  */
+    /* Make sure we can see the IMU ID */
     response = mpu9250_imu_read(mpu, MPU9250_IMU_WHO_AM_I);
-
     if (response != 0x71)
         return false;
 
@@ -268,8 +275,6 @@ static bool mpu9250_init_imu(mpu_t *mpu)
 
     /* Enable I2C bypass so commands can be sent to magnetometer.  */
     mpu9250_imu_write(mpu, MPU9250_IMU_INT_PIN_CFG, 0x02);    
-    
-    /* TODO: configure  */
 
     return true;
 }
@@ -283,7 +288,14 @@ static bool mpu9250_init_mag(mpu_t *mpu)
     if (response != 0x48)
         return false;
 
-    /* TODO: configure  */
+    /* Reset the device */
+    if (!mpu9250_mag_write(mpu, MPU9250_MAG_CNTL2, 0x1))
+        return false;
+
+    /* Set to continuous measurement 2 mode and 16-bit output */
+    if (!mpu9250_mag_write(mpu, MPU9250_MAG_CNTL1, (1 << 4) | (6 << 0)))
+        return false;
+
     return true;
 }
 
