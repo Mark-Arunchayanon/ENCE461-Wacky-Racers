@@ -1,0 +1,18 @@
+Change Component DesignItemId : Designator=H3 Old DesignItemId=JA_MOLEX_KK_5POS New DesignItemId=JB_53261-05
+Change Component Description : Designator=H3 Old Description=CONN HEADER 5POS 2.54mm VERT_Thru Hole New Description=Header_Horiz_5Pos_1.25mm_125V@1A_SMT
+Change component parameters: Designator = "H3"; Footprint = "SD-53398-0519"; UniqueID = "\DGOFZRUT"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Contact Termination"; Value = "Surface Mount Right Angle"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Current Rating"; Value = "1"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "External Depth"; Value = "4.2"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "External Length / Height"; Value = "3.4"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "MOLEX"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "53261-0590"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "No. of Contacts"; Value = "5"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Pitch Spacing"; Value = "1.25"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "PCB Assembly WS"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "615018"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "SMD Horiz 1.25mm"; VariantName = "[No Variations]"

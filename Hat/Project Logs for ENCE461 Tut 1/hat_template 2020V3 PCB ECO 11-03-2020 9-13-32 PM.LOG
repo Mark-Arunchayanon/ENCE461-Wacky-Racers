@@ -1,0 +1,16 @@
+Change Component DesignItemId : Designator=H3 Old DesignItemId=JB_53261-05 New DesignItemId=JA_MOLEX_KK_5POS
+Change Component Footprint: Designator=H3 Old Footprint=SD-53398-0519 New Footprint=MOLEX_KK_5_HDR
+Change Component Footprint: Designator=H4 Old Footprint=SD-53398-0619 New Footprint=MOLEX_KK_6_HDR
+Change Component Comment : Designator=H3 Old Comment=SMD Vert 1.25mm New Comment=5 Pin Molex KK Hdr
+Change Component Description : Designator=H3 Old Description=Header_Horiz_5Pos_1.25mm_125V@1A_SMT New Description=CONN HEADER 5POS 2.54mm VERT_Thru Hole
+Change component parameters: Designator = "H3"; Footprint = "MOLEX_KK_5_HDR"; UniqueID = "\DGOFZRUT"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = "22-23-2051"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "9731679"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "5 Pin Molex KK Hdr"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verify"; Value = ""; VariantName = "[No Variations]"

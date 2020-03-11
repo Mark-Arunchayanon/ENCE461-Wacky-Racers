@@ -1,0 +1,40 @@
+Change Component Footprint: Designator=H7 Old Footprint=MOLEX_KK_2_HDR New Footprint=SD-53398-0219
+Change Component Footprint: Designator=H8 Old Footprint=MOLEX_KK_2_HDR New Footprint=SD-53398-0219
+Change Component Footprint: Designator=H9 Old Footprint=MOLEX_KK_2_HDR New Footprint=SD-53398-0219
+Change Component Footprint: Designator=H10 Old Footprint=MOLEX_KK_2_HDR New Footprint=SD-53398-0219
+Change Component Footprint: Designator=H11 Old Footprint=MOLEX_KK_3_HDR New Footprint=SD-53398-0319
+Change Component Footprint: Designator=H2 Old Footprint=MOLEX_KK_4_HDR New Footprint=SD-53398-0419
+Change Component Footprint: Designator=H3 Old Footprint=MOLEX_KK_5_HDR New Footprint=SD-53398-0519
+Change Component Footprint: Designator=H4 Old Footprint=MOLEX_KK_6_HDR New Footprint=SD-53398-0619
+Change Component Comment: Designator=H7 Old Comment==Value New Comment=SMD Vert 1.25mm
+Change Component Comment: Designator=H8 Old Comment==Value New Comment=SMD Vert 1.25mm
+Change Component Comment: Designator=H9 Old Comment==Value New Comment=SMD Vert 1.25mm
+Change Component Comment: Designator=H10 Old Comment==Value New Comment=SMD Vert 1.25mm
+Change Component Comment: Designator=H11 Old Comment==Value New Comment=SMD Vert 1.25mm
+Change Component Comment: Designator=TP7 Old Comment=3V3 New Comment=TP_0603
+Change Component Comment: Designator=TP10 Old Comment=3V3 New Comment=TP_0603
+Change Component Comment: Designator=TP11 Old Comment=3V3 New Comment=TP_0603
+Change Component Comment: Designator=TP12 Old Comment=3V3 New Comment=TP_0603
+Change Component Comment: Designator=TP14 Old Comment=3V3 New Comment=TP_0603
+Change Component Comment: Designator=TP15 Old Comment=3V3 New Comment=TP_0603
+Change Component Comment: Designator=TP16 Old Comment=3V3 New Comment=TP_0603
+Change Component Comment: Designator=TP22 Old Comment=3V3 New Comment=TP_0603
+Change Component Comment: Designator=TP24 Old Comment=3V3 New Comment=TP_0603
+Change Component Comment: Designator=TP9 Old Comment=3V3RF New Comment=TP_0603
+Change Component Comment: Designator=H2 Old Comment==Value New Comment=SMD Vert 1.25mm
+Change Component Comment: Designator=H3 Old Comment==Value New Comment=SMD Vert 1.25mm
+Change Component Comment: Designator=TP2 Old Comment=5V New Comment=TP_0603
+Change Component Comment: Designator=TP3 Old Comment=5V New Comment=TP_0603
+Change Component Comment: Designator=TP6 Old Comment=5V New Comment=TP_0603
+Change Component Comment: Designator=TP8 Old Comment=5V New Comment=TP_0603
+Change Component Comment: Designator=TP21 Old Comment=5V New Comment=TP_0603
+Change Component Comment: Designator=H4 Old Comment==Value New Comment=SMD Vert 1.25mm
+Change Component Comment: Designator=TP17 Old Comment=D_N New Comment=TP_0603
+Change Component Comment: Designator=TP19 Old Comment=D_P New Comment=TP_0603
+Change Component Comment: Designator=GND1 Old Comment=GND New Comment=TP_0603
+Change Component Comment: Designator=GND2 Old Comment=GND New Comment=TP_0603
+Change Component Comment: Designator=TP23 Old Comment=LEDA New Comment=TP_0603
+Change Component Comment: Designator=TP20 Old Comment=LEDB New Comment=TP_0603
+Change Component Comment: Designator=TP1 Old Comment=VBAT New Comment=TP_0603
+Change Component Comment: Designator=TP18 Old Comment=VBUS New Comment=TP_0603
+Change Component Designator: OldDesignator=3V3RF NewDesignator=TP13
