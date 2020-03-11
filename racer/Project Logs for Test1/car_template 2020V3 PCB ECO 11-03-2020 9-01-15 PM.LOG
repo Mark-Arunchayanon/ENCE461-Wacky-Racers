@@ -1,0 +1,96 @@
+Change Component DesignItemId : Designator=H11 Old DesignItemId=JB_53398-02 New DesignItemId=JA_MOLEX_KK_2POS
+Change Component DesignItemId : Designator=H14 Old DesignItemId=JB_53398-02 New DesignItemId=JA_MOLEX_KK_2POS
+Change Component DesignItemId : Designator=TP4 Old DesignItemId=TP_1206 New DesignItemId=TP_0603
+Change Component DesignItemId : Designator=TP5 Old DesignItemId=TP_1206 New DesignItemId=TP_0603
+Change Component DesignItemId : Designator=TP6 Old DesignItemId=TP_1206 New DesignItemId=TP_0603
+Change Component DesignItemId : Designator=TP7 Old DesignItemId=TP_1206 New DesignItemId=TP_0603
+Change Component DesignItemId : Designator=TP10 Old DesignItemId=TP_1206 New DesignItemId=TP_0603
+Change Component Footprint: Designator=H11 Old Footprint=SD-53398-0219 New Footprint=MOLEX_KK_2_HDR
+Change Component Footprint: Designator=H14 Old Footprint=SD-53398-0219 New Footprint=MOLEX_KK_2_HDR
+Change Component Footprint: Designator=TP4 Old Footprint=TP_1206 New Footprint=TP_0603
+Change Component Footprint: Designator=TP5 Old Footprint=TP_1206 New Footprint=TP_0603
+Change Component Footprint: Designator=TP6 Old Footprint=TP_1206 New Footprint=TP_0603
+Change Component Footprint: Designator=TP7 Old Footprint=TP_1206 New Footprint=TP_0603
+Change Component Footprint: Designator=TP10 Old Footprint=TP_1206 New Footprint=TP_0603
+Change Component Comment : Designator=TP4 Old Comment=BUT0 New Comment=TP_0603
+Change Component Comment : Designator=H11 Old Comment=SMD Vert 1.25mm New Comment=2 Pin Molex KK HDR
+Change Component Comment : Designator=H14 Old Comment=SMD Vert 1.25mm New Comment=2 Pin Molex KK HDR
+Change Component Description : Designator=H11 Old Description=Header_Vert_2Pos_1.25mm_125V@1A_SMT New Description=CONN HEADER 2POS 2.54mm VERT_Thru Hole
+Change Component Description : Designator=H14 Old Description=Header_Vert_2Pos_1.25mm_125V@1A_SMT New Description=CONN HEADER 2POS 2.54mm VERT_Thru Hole
+Change Component Description : Designator=TP4 Old Description=Test-Point 3.3x1.6x2.1mm SMD New Description=Test Point 1.65X0.9X1.2mm SMD
+Change Component Description : Designator=TP5 Old Description=Test-Point 3.3x1.6x2.1mm SMD New Description=Test Point 1.65X0.9X1.2mm SMD
+Change Component Description : Designator=TP6 Old Description=Test-Point 3.3x1.6x2.1mm SMD New Description=Test Point 1.65X0.9X1.2mm SMD
+Change Component Description : Designator=TP7 Old Description=Test-Point 3.3x1.6x2.1mm SMD New Description=Test Point 1.65X0.9X1.2mm SMD
+Change Component Description : Designator=TP10 Old Description=Test-Point 3.3x1.6x2.1mm SMD New Description=Test Point 1.65X0.9X1.2mm SMD
+Change Component Kind : Designator=TP10 Old Kind=Standard (No BOM) New Kind=Standard
+Change Component Kind : Designator=TP7 Old Kind=Standard (No BOM) New Kind=Standard
+Change Component Kind : Designator=TP6 Old Kind=Standard (No BOM) New Kind=Standard
+Change Component Kind : Designator=TP5 Old Kind=Standard (No BOM) New Kind=Standard
+Change Component Kind : Designator=TP4 Old Kind=Standard (No BOM) New Kind=Standard
+Change component parameters: Designator = "TP4"; Footprint = "TP_0603"; UniqueID = "\XHJDIZXQ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity AMP Connectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "1625854-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106145CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Terminal"; Value = "0.063" x 0.031" x 0.045" (1.60mm x 0.80mm x 1.15mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PC Test Point"; VariantName = "[No Variations]"
+Change component parameters: Designator = "TP5"; Footprint = "TP_0603"; UniqueID = "\ANKVKDIP"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity AMP Connectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "1625854-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106145CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Terminal"; Value = "0.063" x 0.031" x 0.045" (1.60mm x 0.80mm x 1.15mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PC Test Point"; VariantName = "[No Variations]"
+Change component parameters: Designator = "TP6"; Footprint = "TP_0603"; UniqueID = "\CZLURYAI"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity AMP Connectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "1625854-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106145CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Terminal"; Value = "0.063" x 0.031" x 0.045" (1.60mm x 0.80mm x 1.15mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PC Test Point"; VariantName = "[No Variations]"
+Change component parameters: Designator = "TP7"; Footprint = "TP_0603"; UniqueID = "\YFCEERIZ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity AMP Connectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "1625854-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106145CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Terminal"; Value = "0.063" x 0.031" x 0.045" (1.60mm x 0.80mm x 1.15mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PC Test Point"; VariantName = "[No Variations]"
+Change component parameters: Designator = "TP10"; Footprint = "TP_0603"; UniqueID = "\KMXJPFRL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity AMP Connectors"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "1625854-3"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "A106145CT-ND"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Terminal"; Value = "0.063" x 0.031" x 0.045" (1.60mm x 0.80mm x 1.15mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Type"; Value = "PC Test Point"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H11"; Footprint = "MOLEX_KK_2_HDR"; UniqueID = "\GHYNLNVA"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1462926"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2 Pin Molex KK HDR"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H14"; Footprint = "MOLEX_KK_2_HDR"; UniqueID = "\ZDLWEKST"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1462926"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2 Pin Molex KK HDR"; VariantName = "[No Variations]"

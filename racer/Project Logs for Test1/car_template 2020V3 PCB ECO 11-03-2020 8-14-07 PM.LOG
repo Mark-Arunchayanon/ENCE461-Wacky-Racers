@@ -1,0 +1,145 @@
+Change Component DesignItemId : Designator=H4 Old DesignItemId=JB_53261-04 New DesignItemId=JA_MOLEX_KK_4POS
+Change Component DesignItemId : Designator=H1 Old DesignItemId=JB_53398-02 New DesignItemId=JA_MOLEX_KK_2POS
+Change Component DesignItemId : Designator=H5 Old DesignItemId=JB_53398-02 New DesignItemId=JA_MOLEX_KK_2POS
+Change Component DesignItemId : Designator=H6 Old DesignItemId=JB_53398-02 New DesignItemId=JA_MOLEX_KK_2POS
+Change Component DesignItemId : Designator=H7 Old DesignItemId=JB_53398-02 New DesignItemId=JA_MOLEX_KK_2POS
+Change Component DesignItemId : Designator=H8 Old DesignItemId=JB_53398-02 New DesignItemId=JA_MOLEX_KK_2POS
+Change Component DesignItemId : Designator=H12 Old DesignItemId=JB_53398-03 New DesignItemId=JA_MOLEX_KK_3POS
+Change Component DesignItemId : Designator=H13 Old DesignItemId=JB_53398-04 New DesignItemId=JA_MOLEX_KK_4POS
+Change Component DesignItemId : Designator=H3 Old DesignItemId=JB_53398-06 New DesignItemId=JA_MOLEX_KK_6POS
+Change Component Footprint: Designator=H4 Old Footprint=SD-53261-0419 New Footprint=MOLEX_KK_4_HDR
+Change Component Footprint: Designator=H1 Old Footprint=SD-53398-0219 New Footprint=MOLEX_KK_2_HDR
+Change Component Footprint: Designator=H5 Old Footprint=SD-53398-0219 New Footprint=MOLEX_KK_2_HDR
+Change Component Footprint: Designator=H6 Old Footprint=SD-53398-0219 New Footprint=MOLEX_KK_2_HDR
+Change Component Footprint: Designator=H7 Old Footprint=SD-53398-0219 New Footprint=MOLEX_KK_2_HDR
+Change Component Footprint: Designator=H8 Old Footprint=SD-53398-0219 New Footprint=MOLEX_KK_2_HDR
+Change Component Footprint: Designator=H12 Old Footprint=SD-53398-0319 New Footprint=MOLEX_KK_3_HDR
+Change Component Footprint: Designator=H13 Old Footprint=SD-53398-0419 New Footprint=MOLEX_KK_4_HDR
+Change Component Footprint: Designator=H3 Old Footprint=SD-53398-0619 New Footprint=MOLEX_KK_6_HDR
+Change Component Comment : Designator=H4 Old Comment=SMD Horiz 1.25mm New Comment=4 Pin Molex KK Hdr
+Change Component Comment : Designator=H1 Old Comment=SMD Vert 1.25mm New Comment=2 Pin Molex KK HDR
+Change Component Comment : Designator=H5 Old Comment=SMD Vert 1.25mm New Comment=2 Pin Molex KK HDR
+Change Component Comment : Designator=H6 Old Comment=SMD Vert 1.25mm New Comment=2 Pin Molex KK HDR
+Change Component Comment : Designator=H7 Old Comment=SMD Vert 1.25mm New Comment=2 Pin Molex KK HDR
+Change Component Comment : Designator=H8 Old Comment=SMD Vert 1.25mm New Comment=2 Pin Molex KK HDR
+Change Component Comment : Designator=H12 Old Comment=SMD Vert 1.25mm New Comment=3 Pin Molex KK Hdr
+Change Component Comment : Designator=H13 Old Comment=SMD Vert 1.25mm New Comment=4 Pin Molex KK Hdr
+Change Component Comment : Designator=H3 Old Comment=SMD Vert 1.25mm New Comment=6 Pin Molex KK Hdr
+Change Component Description : Designator=H4 Old Description=Header_Horiz_4Pos1.25mm_125V@1A_SMT New Description=CONN HEADER 4POS 2.54mm VERT_Thru Hole
+Change Component Description : Designator=H1 Old Description=Header_Vert_2Pos_1.25mm_125V@1A_SMT New Description=CONN HEADER 2POS 2.54mm VERT_Thru Hole
+Change Component Description : Designator=H5 Old Description=Header_Vert_2Pos_1.25mm_125V@1A_SMT New Description=CONN HEADER 2POS 2.54mm VERT_Thru Hole
+Change Component Description : Designator=H6 Old Description=Header_Vert_2Pos_1.25mm_125V@1A_SMT New Description=CONN HEADER 2POS 2.54mm VERT_Thru Hole
+Change Component Description : Designator=H7 Old Description=Header_Vert_2Pos_1.25mm_125V@1A_SMT New Description=CONN HEADER 2POS 2.54mm VERT_Thru Hole
+Change Component Description : Designator=H8 Old Description=Header_Vert_2Pos_1.25mm_125V@1A_SMT New Description=CONN HEADER 2POS 2.54mm VERT_Thru Hole
+Change Component Description : Designator=H12 Old Description=Header_Vert_3Pos_1.25mm_125V@1A_SMT New Description=CONN HEADER 3POS 2.54mm VERT_Thru Hole
+Change Component Description : Designator=H13 Old Description=Header_Vert_4Pos_1.25mm_125V@1A_SMT New Description=CONN HEADER 4POS 2.54mm VERT_Thru Hole
+Change Component Description : Designator=H3 Old Description=Header_Vert_6Pos_1.25mm_125V@1A_SMT New Description=CONN HEADER 6POS 2.54mm VERT_Thru Hole
+Change component parameters: Designator = "H3"; Footprint = "MOLEX_KK_6_HDR"; UniqueID = "\RRMEICHN"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Publisher"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1462922"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "6 Pin Molex KK Hdr"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H4"; Footprint = "MOLEX_KK_4_HDR"; UniqueID = "\KDUANJYS"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = "22-23-2041"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "9731164"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4 Pin Molex KK Hdr"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verify"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "H1"; Footprint = "MOLEX_KK_2_HDR"; UniqueID = "\NQJZBLVZ"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1462926"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2 Pin Molex KK HDR"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H5"; Footprint = "MOLEX_KK_2_HDR"; UniqueID = "\QSQYXSBS"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1462926"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2 Pin Molex KK HDR"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H6"; Footprint = "MOLEX_KK_2_HDR"; UniqueID = "\BYLJGHPF"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1462926"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2 Pin Molex KK HDR"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H7"; Footprint = "MOLEX_KK_2_HDR"; UniqueID = "\UHWKNSMC"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1462926"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2 Pin Molex KK HDR"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H8"; Footprint = "MOLEX_KK_2_HDR"; UniqueID = "\PXKRGDSF"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "1462926"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "2 Pin Molex KK HDR"; VariantName = "[No Variations]"
+Change component parameters: Designator = "H13"; Footprint = "MOLEX_KK_4_HDR"; UniqueID = "\GHDLLZEX"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = "22-23-2041"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "9731164"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "4 Pin Molex KK Hdr"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verify"; Value = ""; VariantName = "[No Variations]"
+Change component parameters: Designator = "H12"; Footprint = "MOLEX_KK_3_HDR"; UniqueID = "\RTHOLGWL"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "Molex"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer PN"; Value = "22-23-2031"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Price"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Storage Location"; Value = "ECE Dept Store"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier"; Value = "ECE Dept"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "9731156"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 2"; Value = ""; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "3 Pin Molex KK Hdr"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Verify"; Value = ""; VariantName = "[No Variations]"
+Added Member To Class: ClassName=racer Member=Component TP21 VBAT
+Added Member To Class: ClassName=racer Member=Component TP23 5V
+Added Member To Class: ClassName=racer Member=Component TP24 3V3
+Added Member To Class: ClassName=racer Member=Component TP26 SP_EN
