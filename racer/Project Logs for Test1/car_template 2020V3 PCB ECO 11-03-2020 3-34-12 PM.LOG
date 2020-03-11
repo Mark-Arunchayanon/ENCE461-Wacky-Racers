@@ -1,0 +1,9 @@
+Removed Pin From Net: NetName=D_P Pin=TP8-1
+Removed Pin From Net: NetName=D_N Pin=TP9-1
+Removed Member From Class: ClassName=racer Member=TP8
+Removed Member From Class: ClassName=racer Member=TP9
+Change Component Library : Designator=H9 Old Library=ECE AD19Components_19V1.IntLib New Library=CONNECTORS.SchLib
+Added Member To Class: ClassName=racer Member=Component TP21 VBAT
+Added Member To Class: ClassName=racer Member=Component TP23 5V
+Added Member To Class: ClassName=racer Member=Component TP24 3V3
+Added Member To Class: ClassName=racer Member=Component TP26 SP_EN
