@@ -1,0 +1,19 @@
+Added Pin To Net: NetName=USB_DETECT Pin=U1-35
+Added Member To Class: ClassName=racer Member=Component C27 10uF
+Added Member To Class: ClassName=racer Member=Component C29 100nF
+Added Member To Class: ClassName=racer Member=Component C30 100nF
+Added Member To Class: ClassName=racer Member=Component H11 4 Pin Molex KK Hdr
+Added Member To Class: ClassName=racer Member=Component H12 2 Pin Molex KK HDR
+Added Member To Class: ClassName=racer Member=Component R14 1R
+Added Member To Class: ClassName=racer Member=Component R16 680R
+Added Member To Class: ClassName=racer Member=Component R17 680R
+Added Member To Class: ClassName=racer Member=Component TP10 3V3RF
+Added Member To Class: ClassName=racer Member=Component TP11 5V
+Added Member To Class: ClassName=racer Member=Component TP13 3V3
+Added Member To Class: ClassName=racer Member=Component TP14 3V3RF
+Added Member To Class: ClassName=racer Member=Component TP16 D_N
+Added Member To Class: ClassName=racer Member=Component TP17 VBUS
+Added Member To Class: ClassName=racer Member=Component TP20 VBAT
+Added Member To Class: ClassName=racer Member=Component TP21 LEDB
+Added Member To Class: ClassName=racer Member=Component TP23 3V3
+Added Member To Class: ClassName=racer Member=Component TP25 3V3
