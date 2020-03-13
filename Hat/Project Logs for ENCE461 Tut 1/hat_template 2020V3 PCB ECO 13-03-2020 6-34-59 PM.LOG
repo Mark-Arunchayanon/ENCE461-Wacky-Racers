@@ -1,0 +1,10 @@
+Removed Pin From Net: NetName=LED Pin=TP23-1
+Removed Member From Class: ClassName=hat Member=TP23
+Added Member To Class: ClassName=hat Member=Component H7 SMD Vert 1.25mm
+Added Member To Class: ClassName=hat Member=Component H8 SMD Vert 1.25mm
+Added Member To Class: ClassName=hat Member=Component H9 SMD Vert 1.25mm
+Added Member To Class: ClassName=hat Member=Component H10 SMD Vert 1.25mm
+Added Member To Class: ClassName=hat Member=Component R14 680R
+Added Member To Class: ClassName=hat Member=Component R15 680R
+Added Member To Class: ClassName=hat Member=Component R17 680R
+Added Member To Class: ClassName=hat Member=Component R18 680R
