@@ -1,0 +1,66 @@
+Removed Pin From Net: NetName=NetC4_1 Pin=Y1-2
+Change Component Footprint: Designator=Y1 Old Footprint=HC49/4h_SMX New Footprint=6.0X3.5-4
+Change Component Designator: OldDesignator=C25 NewDesignator=C26
+Change Component Designator: OldDesignator=C26 NewDesignator=C27
+Change Component Designator: OldDesignator=C27 NewDesignator=C28
+Change Component Designator: OldDesignator=C28 NewDesignator=C29
+Change Component Designator: OldDesignator=C29 NewDesignator=C30
+Change Component Designator: OldDesignator=C30 NewDesignator=C25
+Change Component Designator: OldDesignator=H11 NewDesignator=H12
+Change Component Designator: OldDesignator=H12 NewDesignator=H13
+Change Component Designator: OldDesignator=H13 NewDesignator=H11
+Change Component Designator: OldDesignator=R13 NewDesignator=R14
+Change Component Designator: OldDesignator=R14 NewDesignator=R15
+Change Component Designator: OldDesignator=R15 NewDesignator=R16
+Change Component Designator: OldDesignator=R16 NewDesignator=R17
+Change Component Designator: OldDesignator=R17 NewDesignator=R13
+Change Component Designator: OldDesignator=TP10 NewDesignator=TP8
+Change Component Designator: OldDesignator=TP11 NewDesignator=TP9
+Change Component Designator: OldDesignator=TP12 NewDesignator=TP10
+Change Component Designator: OldDesignator=TP13 NewDesignator=TP11
+Change Component Designator: OldDesignator=TP14 NewDesignator=TP12
+Change Component Designator: OldDesignator=TP15 NewDesignator=TP13
+Change Component Designator: OldDesignator=TP16 NewDesignator=TP14
+Change Component Designator: OldDesignator=TP17 NewDesignator=TP15
+Change Component Designator: OldDesignator=TP18 NewDesignator=TP16
+Change Component Designator: OldDesignator=TP19 NewDesignator=TP17
+Change Component Designator: OldDesignator=TP20 NewDesignator=TP19
+Change Component Designator: OldDesignator=TP21 NewDesignator=TP20
+Change Component Designator: OldDesignator=TP22 NewDesignator=TP21
+Change Component Designator: OldDesignator=TP23 NewDesignator=TP22
+Change Component Designator: OldDesignator=TP24 NewDesignator=TP23
+Change Component Designator: OldDesignator=TP25 NewDesignator=TP24
+Change Component Designator: OldDesignator=TP26 NewDesignator=TP18
+Change Component Designator: OldDesignator=TP27 NewDesignator=TP25
+Change component parameters: Designator = "Y1"; Footprint = "6.0X3.5-4"; UniqueID = "\OMSVKJHD"
+Change component parameters. Clean all parameters for all variants
+Change component parameters (AddParameter): Name = "ESR (Equivalent Series Resistance)"; Value = "60 Ohm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency"; Value = "12MHz"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency Stability"; Value = "±50ppm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Frequency Tolerance"; Value = "±30ppm"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Height"; Value = "0.047" (1.20mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Load Capacitance"; Value = "18pF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer"; Value = "CTS-Frequency Controls"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer Part Number"; Value = "406C35D12M00000"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mounting Type"; Value = "Surface Mount"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Mode"; Value = "Fundamental"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Operating Temperature"; Value = "-20°C ~ 70°C"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Package / Case"; Value = "4-SMD, No Lead (DFN, LCC)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Size / Dimension"; Value = "0.236" L x 0.138" W (6.00mm x 3.50mm)"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Digi-Key"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "CTX855CT-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=NetC4_1 Pin=Y1-3
+Change Net Name : Old Net Name=NetC25_2 New Net Name=NetC26_2
+Change Net Name : Old Net Name=NetC27_1 New Net Name=NetC28_1
+Change Net Name : Old Net Name=NetH11_1 New Net Name=NetH12_1
+Change Net Name : Old Net Name=NetH11_2 New Net Name=NetH12_2
+Change Net Name : Old Net Name=NetH12_2 New Net Name=NetH13_2
+Change Net Name : Old Net Name=NetH13_1 New Net Name=NetH11_1
+Change Net Name : Old Net Name=NetR16_2 New Net Name=NetR17_2
+Added Member To Class: ClassName=racer Member=Component C13 100nF
+Added Member To Class: ClassName=racer Member=Component C15 100nF
+Added Member To Class: ClassName=racer Member=Component C17 100nF
+Added Member To Class: ClassName=racer Member=Component C20 100nF
+Added Member To Class: ClassName=racer Member=Component C22 100nF
+Added Member To Class: ClassName=racer Member=Component L1 IND 5.2UH 6A
+Added Member To Class: ClassName=racer Member=Component TP15 3V3
