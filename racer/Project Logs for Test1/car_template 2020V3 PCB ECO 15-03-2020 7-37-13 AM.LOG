@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=IRQ Pin=U1-9
+Added Pin To Net: NetName=IRQ Pin=U1-15
+Added Member To Class: ClassName=racer Member=Component C9 1uF
+Added Member To Class: ClassName=racer Member=Component TP11 5V
