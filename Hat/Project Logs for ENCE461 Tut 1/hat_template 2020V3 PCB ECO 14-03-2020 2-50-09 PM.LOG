@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=5V Pin=TP6-1
+Removed Pin From Net: NetName=3V3 Pin=TP7-1
+Removed Pin From Net: NetName=5V Pin=TP8-1
+Removed Pin From Net: NetName=5V Pin=TP21-1
+Removed Member From Class: ClassName=hat Member=TP6
+Removed Member From Class: ClassName=hat Member=TP7
+Removed Member From Class: ClassName=hat Member=TP8
+Removed Member From Class: ClassName=hat Member=TP21
