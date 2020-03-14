@@ -1,0 +1,8 @@
+Removed Pin From Net: NetName=Channel3 Pin=U1-23
+Removed Pin From Net: NetName=Channel2 Pin=U1-25
+Removed Pin From Net: NetName=Channel1 Pin=U1-26
+Removed Pin From Net: NetName=Channel0 Pin=U1-37
+Added Pin To Net: NetName=Channel0 Pin=U1-29
+Added Pin To Net: NetName=Channel1 Pin=U1-30
+Added Pin To Net: NetName=Channel2 Pin=U1-31
+Added Pin To Net: NetName=Channel3 Pin=U1-32
