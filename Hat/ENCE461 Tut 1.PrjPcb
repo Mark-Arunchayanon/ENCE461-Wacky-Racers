@@ -71,6 +71,10 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=HQNNYSUC
 
+[GeneratedDocument1]
+DocumentPath=Project Outputs for ENCE461 Tut 1\Design Rule Check - hat_template 2020V3.html
+DItemRevisionGUID=
+
 [Configuration1]
 Name=Sources
 ParameterCount=0
