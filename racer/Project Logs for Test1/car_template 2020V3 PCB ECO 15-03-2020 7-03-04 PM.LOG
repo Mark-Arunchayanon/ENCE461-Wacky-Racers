@@ -1,0 +1,4 @@
+Removed Pin From Net: NetName=BMV Pin=U1-14
+Removed Pin From Net: NetName=USB_DETECT Pin=U1-35
+Added Pin To Net: NetName=BMV Pin=U1-35
+Added Pin To Net: NetName=USB_DETECT Pin=U1-43
